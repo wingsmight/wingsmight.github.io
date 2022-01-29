@@ -1,13 +1,14 @@
 import React from 'react';
 import '../../App.css';
-import Cards from '../Cards';
-import HeroSection from '../HeroSection';
+import AppInfoSection from '../AppInfoSection';
 import Footer from '../Footer';
+import { fastDice, audioDefender } from './Data';
 
 function Home() {
   return (
     <>
-      <HeroSection />
+      <AppInfoSection {...fastDice} />
+      <AppInfoSection {...audioDefender} />
       <Footer />
     </>
   );
